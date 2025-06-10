@@ -1,0 +1,117 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+  
+.Main-App {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 2rem;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-width: 500px;
+    transition: all 0.3s ease;
+}
+  
+.Main-App h1 {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+  
+.input-group {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+  
+input[type="text"] {
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    width: 60%;
+    min-width: 180px;
+    background: rgba(255, 255, 255, 0.8);
+}
+  
+button {
+    padding: 0.6rem 1.2rem;
+    background: #fff;
+    color: #333;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+  
+button:hover {
+    background: #f1f1f1;
+}
+  
+p {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+  
+.weather-card {
+    margin-top: 1.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 1rem;
+    backdrop-filter: blur(10px);
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+ 
+.weather-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: black;
+    font-weight: 800;
+}
+  
+.weather-card p {
+    margin: 0.3rem 0;
+    font-size: 1rem;
+    color: #333;
+}
+  
+@media (max-width: 500px) {
+    .Main-App {
+      padding: 1.2rem;
+}
+  
+input[type="text"],
+button {
+      width: 100%;
+}
+  
+.input-group {
+      flex-direction: column;
+      gap: 0.75rem;
+}
+
+}
+  
+
