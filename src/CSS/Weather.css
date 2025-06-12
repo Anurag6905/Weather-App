@@ -96,6 +96,11 @@ p {
     font-size: 1rem;
     color: #333;
 }
+
+.Heading3 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
   
 @media (max-width: 500px) {
     .Main-App {
